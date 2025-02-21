@@ -157,7 +157,7 @@ input{
     height: 40px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px green;
+    box-shadow: 1px 1px green;
     width: 60%;
     margin-left: 10px;
 }
@@ -178,6 +178,7 @@ form button{
     border-color: whitesmoke;
     color: whitesmoke;
     background: green;
+    margin-left: 20px;
 }
 
     /* SMALL SCREENS */
