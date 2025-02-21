@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+body{
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }   
+.container{
+        background: linear-gradient(0.25turn,  rgb(71, 70, 70),   rgb(2, 54, 2)); 
+          padding: 20px;
+          height: 100vh;
+          width: 100%
+      }   
+.heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+        margin: 20px;
+    }
+    .heading a{
+        text-decoration: none;
+        color: rgb(11, 177, 11);
+        margin: 15px;
+        font-size: 18px;
+        font-family: sans-serif;
+    
+    }
+    .heading a:hover{
+        font-weight: bold;
+        color: white;
+        border-bottom: 2px green solid;
+    }
+.button{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 6px;
+        background: whitesmoke;
+        color: rgb(1, 58, 1);
+        border: 1px solid green;
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 1px 1px rgb(6, 48, 6);    
+    }
+    .button:hover{
+        color: white;
+        background: green;
+    }
+.hero-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        padding: 30px;    
+    }
+h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        margin-bottom: 20px;
+        }
+.image img{
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;    
+    } 
+#about{
+        background-color: whitesmoke;
+    }
+h2{
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 50px;
+        color: rgba(3, 138, 3, 0.63);   
+}
+.about-me{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.writeup{
+    width: 40%;
+    margin: 20px;
+    text-align: justify;
+}
+.about-me img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+ }
+.projects{
+    padding: 20px;
+    font-family: "Merriweather", serif;
+}
+.projects img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+ }
+.event, .pharm, .landing{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.link{
+    width: 40%;
+    line-height: 20px;
+    margin-bottom: 0px;
+    }
+    .link a{
+        color: rgba(3, 138, 3, 0.63);
+        font-size: 20px;
+        text-align: center;
+        
+         }
+    .link a:hover{
+        font-weight: bold;
+        }
+.footer{
+    background: linear-gradient(0.25turn,  rgb(71, 70, 70),   rgb(2, 54, 2)); 
+    color: whitesmoke;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+     }
+     .footer a{
+        text-decoration: none;
+        color: whitesmoke;     
+    }
+.socials{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    } 
+
+/* CONTACT PAGE */
+.form{
+    width: 700px;
+    height: 600px;
+    background-color: whitesmoke;
+    color: green;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+
+}
+form div{
+    margin: 20px;
+   text-align: center;
+}
+input{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px green;
+    width: 60%;
+    margin-left: 10px;
+}
+textarea{
+   width: 70%;
+   border: none;
+   border-radius: 5px;
+}
+textarea::placeholder {
+    color: green;
+    opacity: 0.5;
+    padding: 5px 5px;
+  }
+form button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background: green;
+}
+
+    /* SMALL SCREENS */
+    @media screen and (max-width: 600px) and (min-width: 300px) {
+        body{
+            font-size: 14px;
+        }
+        .heading{   
+           height: 8%;
+            margin: 10px;
+        }
+        .heading a{
+             margin: 10px;
+            font-size: 15px;    
+        }
+        .heading a:active{ 
+            color: white;
+        }
+        button{
+            padding: 3px;
+            margin: 8px;
+            border-radius: 6px;
+            color: rgb(1, 58, 1);
+            border: 1px solid green;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 1px 1px rgb(6, 48, 6);
+        }
+        .hero-section {
+          flex-direction: column;
+        }
+        .write-up{
+            margin-bottom: 80px;
+        }
+        .about-me{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px;  
+        }
+        h2{
+            font-size: 30px;        
+            padding: 10px;
+            margin-bottom: 10px;  
+    }
+        .writeup{
+            width: 55%;
+            margin: 20px;
+            text-align: center;
+        }
+         .about-me img{
+           height: 200px;
+           width: 200px;
+           object-fit: contain;
+        }
+        .projects{
+            padding: 15px;
+        }
+        .projects img{
+           height: 300px;
+           width: 300px;
+           object-fit: contain;
+           margin-bottom: 5px;
+        }
+        .event, .pharm, .landing{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;  
+        }
+        
+        .link{
+        width: 70%;
+        line-height: 18px;
+        margin-bottom: 0px;
+        }
+        .project-title, .link a{
+            font-size: 18px;       
+        }
+       
+        /* CONTACT ME */
+        .form{
+            width: 350px;
+            height: 600px;
+            margin-top: 30px;
+        }
+    
+        input{
+            height: 30px;
+            width: 80%;
+        }
+        textarea{
+           width: 100%;
+           margin-top: 20px;
+        }
+        form button{
+            width: 90%;
+            padding: 8px;
+        }
+      }
+    /* LARGE SCREENS */
+      @media screen and (min-width: 600px) and (max-width:1000px)  {
+        .about-me{
+         padding: 10px;   
+         font-size: 15px;
+        }
+        .about-me img{
+            object-fit: contain;
+        
+        }
+        .projects{
+            padding: 20px;
+            font-family: "Merriweather", serif;
+        }
+        
+        .projects img{
+          
+           height: 200px;
+           width: 300px;
+           object-fit: cover;
+        }
+       .link{
+        width: 50%;
+       font-size: 17px;
+       margin-left: 50px;
+        
+        }
+
+        /* CONTACT ME */
+        .form{
+            width: 70%;
+            height: 600px;
+            margin-top: 30px;
+        }
+    
+        input{
+            height: 30px;
+            width: 80%;
+        }
+        textarea{
+           width: 100%;
+           margin-top: 20px;
+        }
+        form button{
+            width: 90%;
+            padding: 8px;
+        }
+      }
