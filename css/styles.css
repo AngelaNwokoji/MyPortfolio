@@ -181,8 +181,10 @@ form button{
     margin-left: 20px;
 }
 
-    /* SMALL SCREENS */
-    @media screen and (max-width: 600px) and (min-width: 300px) {
+/* SMAL;L SCREENS */
+
+    /* MEDIUM SCREENS */
+    @media only screen and (max-width: 600px) and (min-width: 00px) {
         body{
             font-size: 14px;
         }
@@ -197,8 +199,11 @@ form button{
         .heading a:active{ 
             color: white;
         }
+        .heading a:nth-of-type(2){
+            display: none;
+        }
         button{
-            padding: 3px;
+           
             margin: 8px;
             border-radius: 6px;
             color: rgb(1, 58, 1);
@@ -213,10 +218,16 @@ form button{
         .write-up{
             margin-bottom: 80px;
         }
+        .image img{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;    
+        } 
         .about-me{
             display: flex;
-            justify-content: space-evenly;
+           flex-direction: column;
             padding: 15px;  
+            align-items: center;
         }
         h2{
             font-size: 30px;        
@@ -260,7 +271,7 @@ form button{
        
         /* CONTACT ME */
         .form{
-            width: 350px;
+            width: 300px;
             height: 600px;
             margin-top: 30px;
         }
